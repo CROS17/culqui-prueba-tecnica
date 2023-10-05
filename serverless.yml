@@ -1,0 +1,39 @@
+service: api_culqui
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  app:
+    handler: src/app.handler
+    events:
+      - http:
+          method: GET
+          path: /tokens
+      - http:
+          method: POST
+          path: /tokens
+
+resources:
+  Resources:
+    MyApiGateway:
+      Type: "AWS::ApiGateway::RestApi"
+      Properties:
+        Name: "MyApiGateway"
+
+  Outputs:
+    ApiEndpoint:
+      Description: "URL de la API"
+      Value:
+        Fn::Sub: "https://${MyApiGateway}.execute-api.${AWS::Region}.amazonaws.com/production"
+
+custom:
+  esbuild:
+    bundle: true
+    minify: false
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
