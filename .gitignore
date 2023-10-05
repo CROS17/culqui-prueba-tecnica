@@ -170,6 +170,7 @@ ehthumbs_vista.db
 [Dd]esktop.ini
 .node_modules
 .env
+.esbuild
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/

@@ -13,7 +13,7 @@ Asegúrate de tener Node.js y npm instalados en tu sistema. Puedes descargarlos 
 1. Clona el repositorio desde GitHub:
 
 ```bash
-   git clone https://github.com/CROS17/prueba_tecnica.git
+   git clone https://github.com/CROS17/culqui-prueba-tecnica.git
 ```
 
 2. Instalar los paquetes necesarios para su funcionamiento:
