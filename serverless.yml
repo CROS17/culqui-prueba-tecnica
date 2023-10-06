@@ -1,4 +1,4 @@
-service: api_culqui
+service: api-culqui
 useDotenv: true
 
 provider:

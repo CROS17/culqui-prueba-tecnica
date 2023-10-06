@@ -28,8 +28,15 @@ Asegúrate de tener Node.js y npm instalados en tu sistema. Puedes descargarlos 
 Para ejecutar el proyecto:
 
 ```bash
+  npm run dev
+```
+
+Para hacer el deploy
+
+```bash
   npm run deploy
 ```
+
 
 ## Authors
 
